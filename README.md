@@ -1,10 +1,14 @@
 # icon-fonts
 
-Step 1:
-npm-install
+To install:
+Run npm-install
 
-Step 2:
-gulp iconfont
+To generate icon font:
+1. Place SVG files in the /icons folder
+2. Run gulp iconfont
 
-Watch:
-gulp
+This process will generate all font files, which will be places in the /fonts
+folder. It will also generate CSS classes in css/icons.css.
+
+To generate fonts automatically when SVG files are updated/added, simply run
+gulp.
