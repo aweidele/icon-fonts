@@ -2,9 +2,6 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var sourcemaps = require('gulp-sourcemaps');
-var concat = require('gulp-concat');
-var rename = require('gulp-rename');
-var uglify = require('gulp-uglify');
 var pump = require('pump');
 var iconfont = require('gulp-iconfont');
 var iconfontCss = require('gulp-iconfont-css');
@@ -28,15 +25,6 @@ gulp.task('sass', function(){
     .pipe(gulp.dest('css/'))
 });
 
-gulp.task('compress', function() {
-  return gulp.src('src/js/*.js')
-    .pipe(concat('scripts.js'))
-    .pipe(gulp.dest('js'))
-    .pipe(rename('site.js'))
-    .pipe(uglify())
-    .pipe(gulp.dest('js'));
-});
-
 gulp.task('iconfont', function(){
   gulp.src(['src/icons/*.svg'])
     .pipe(iconfontCss({
@@ -55,8 +43,7 @@ gulp.task('iconfont', function(){
 
 gulp.task('watch', function(){
   gulp.watch('src/sass/**/*.scss', ['sass']);
-  gulp.watch('src/js/**/*.js', ['compress']);
   gulp.watch('src/icons/**/*.svg', ['iconfont','sass']);
 });
 
-gulp.task('default', ['sass', 'compress', 'watch']);
+gulp.task('default', ['sass', 'watch']);
