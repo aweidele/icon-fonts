@@ -1,28 +1,25 @@
 {
-  "name": "petelandco2017",
+  "name": "icon-fonts",
   "version": "1.0.0",
-  "description": "2017 Website for Petel and Co",
+  "description": "Icon Font Generator",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aweidele/petelandco2017.git"
+    "url": "git+https://github.com/aweidele/icon-fonts"
   },
   "author": "Aaron Weidele",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/aweidele/petelandco2017/issues"
+    "url": "https://github.com/aweidele/icon-fonts/issues"
   },
-  "homepage": "https://github.com/aweidele/petelandco2017#readme",
+  "homepage": "https://github.com/aweidele/icon-fonts#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^4.0.0",
     "gulp-iconfont": "^9.0.2",
     "gulp-iconfont-css": "^2.1.0",
-    "gulp-sass": "^3.1.0",
-    "gulp-sourcemaps": "^2.6.1",
     "pump": "^1.0.2"
   }
 }
