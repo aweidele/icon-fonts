@@ -18,8 +18,12 @@
   "homepage": "https://github.com/aweidele/icon-fonts#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-iconfont": "^9.0.2",
-    "gulp-iconfont-css": "^2.1.0",
+    "gulp-iconfont": "^10.0.2",
+    "gulp-iconfont-css": "^3.0.0",
+    "lodash": "^4.17.15",
     "pump": "^1.0.2"
+  },
+  "dependencies": {
+    "natives": "^1.1.6"
   }
 }

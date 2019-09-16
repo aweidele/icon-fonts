@@ -25,14 +25,18 @@
 	content: "\E001";
 }
 
-.icon-monkey:before {
+.icon-github:before {
 	content: "\E002";
 }
 
-.icon-smile:before {
+.icon-monkey:before {
 	content: "\E003";
 }
 
-.icon-star:before {
+.icon-smile:before {
 	content: "\E004";
+}
+
+.icon-star:before {
+	content: "\E005";
 }
