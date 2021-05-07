@@ -20,7 +20,7 @@
     "gulp": "^3.9.1",
     "gulp-iconfont": "^10.0.2",
     "gulp-iconfont-css": "^3.0.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "pump": "^1.0.2"
   },
   "dependencies": {
